@@ -14,7 +14,7 @@ function loadAllItems() {
         {
             barcode: 'ITEM000001',
             name: '羽毛球',
-            unit: '瓶',
+            unit: '个',
             price: 1.00
         },
         {

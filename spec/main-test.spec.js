@@ -5,7 +5,7 @@
 
 
 var fixtures = require('./fixtures');
-var printReceipt = require("../main/main.js");
+var main = require("../main/main.js");
 
 describe('pos', function () {
     var inputs;
@@ -32,7 +32,7 @@ describe('pos', function () {
 
         spyOn(console, 'log');
 
-        printReceipt(inputs);
+       // main.printReceipt(inputs);
 
         const expectText = '***<没钱赚商店>收据***' + '\n' +
             '名称：羽毛球，数量：5个，单价：1.00(元)，小计：4.00(元)' + '\n' +
@@ -52,7 +52,7 @@ describe('pos', function () {
     });
 
     it('should print cartItems', function () {
-        var cartItems = buildCartItems(inputs, allItems);
+        var cartItems = main.buildCartItems(inputs, allItems);
         var expectCartItems = [
             {
                 item: {
