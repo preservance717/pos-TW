@@ -3,6 +3,39 @@
  */
 'use strict'
 
+
+function buildReceiptItems(cartItems, promotions) {
+    var receiptItems = [];
+
+    for (var i = 0; i < cartItems.length; i++) {
+        var promotionType = getPromotionType(cartItems[i].item.barcode, promotions);
+        receiptItems.push(discount(cartItems[i], promotionType));
+    }
+    return receiptItems;
+}
+
+function discount(cartItem, promotionType) {
+    var saved = 0;
+
+    if (promotionType === 'BUY_TWO_GET_ONE_FREE') {
+        saved = cartItem.item.price * parseInt(cartItem.count / 3);
+    } else if (promotionType === 'a 95 persent charge') {
+        saved = cartItem.item.price * 0.05;
+    }
+
+    var subtotal = cartItem.item.price * parseInt(cartItem.count) - saved;
+
+    return {cartItem:cartItem, subtotal:subtotal, saved:saved};
+}
+
+function getPromotionType(barcode, promotions) {
+    for (var i = 0; i < promotions.length; i++) {
+        for (var j = 0; i < promotions[j].barcodes.length; j++) {
+            return promotions[i].barcodes[j] === barcode ? promotions[i].type : '';
+        }
+    }
+}
+
 function buildCartItems(tags, allItems) {
     var cartItems = [];
 
@@ -41,4 +74,7 @@ function findItem(allItems, barcode) {
     return;
 }
 
-module.exports = {buildCartItems: buildCartItems};
+module.exports = {
+    buildCartItems: buildCartItems,
+    buildReceiptItems: buildReceiptItems
+};

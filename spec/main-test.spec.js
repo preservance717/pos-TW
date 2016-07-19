@@ -141,8 +141,8 @@ describe('pos', function () {
                     },
                     count: 2
                 },
-                total:11.00,
-                saved:0.00
+                total:10.45,
+                saved:0.55
             },
             {
                 cartItem:{
