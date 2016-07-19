@@ -12,6 +12,7 @@ describe('pos', function () {
     var allItems;
     var promotions;
     var cartItems;
+    var receiptItems;
 
     beforeEach(function () {
         inputs = [
@@ -56,6 +57,47 @@ describe('pos', function () {
                 count: 3
             }
         ];
+        receiptItems = [
+            {
+                cartItem: {
+                    item: {
+                        barcode: "ITEM000001",
+                        name: "羽毛球",
+                        unit: "个",
+                        price: 1.00
+                    },
+                    count: 5,
+                },
+                subtotal: 4.00,
+                saved: 1.00
+            },
+            {
+                cartItem: {
+                    item: {
+                        barcode: "ITEM000003",
+                        name: "苹果",
+                        unit: "斤",
+                        price: 5.50
+                    },
+                    count: 2
+                },
+                subtotal:10.45,
+                saved:0.55
+            },
+            {
+                cartItem:{
+                    item: {
+                        barcode: "ITEM000005",
+                        name: "可口可乐",
+                        unit: "瓶",
+                        price: 3.00
+                    },
+                    count: 3
+                },
+                subtotal:6.00,
+                saved:3.00
+            }
+        ]
     });
 
     it('should print text', function () {
@@ -159,5 +201,56 @@ describe('pos', function () {
             }
         ];
         expect(receiptItems).toEqual(expectReceiptItems);
+    });
+
+    it('should print receipt', function () {
+        var receipt = main.buildReceipt(receiptItems);
+        var expectReceipt = {
+            receiptItems:[
+                {
+                    cartItem: {
+                        item: {
+                            barcode: "ITEM000001",
+                            name: "羽毛球",
+                            unit: "个",
+                            price: 1.00
+                        },
+                        count: 5,
+                    },
+                    subtotal: 4.00,
+                    saved: 1.00
+                },
+                {
+                    cartItem: {
+                        item: {
+                            barcode: "ITEM000003",
+                            name: "苹果",
+                            unit: "斤",
+                            price: 5.50
+                        },
+                        count: 2
+                    },
+                    subtotal:10.45,
+                    saved:0.55
+                },
+                {
+                    cartItem:{
+                        item: {
+                            barcode: "ITEM000005",
+                            name: "可口可乐",
+                            unit: "瓶",
+                            price: 3.00
+                        },
+                        count: 3
+                    },
+                    subtotal:6.00,
+                    saved:3.00
+                }
+            ],
+            total:20.45,
+            discount:4.55
+        };
+
+        expect(receipt).toEqual(expectReceipt);
     });
 });
