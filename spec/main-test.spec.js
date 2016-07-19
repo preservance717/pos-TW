@@ -11,6 +11,7 @@ describe('pos', function () {
     var inputs;
     var allItems;
     var promotions;
+    var cartItems;
 
     beforeEach(function () {
         inputs = [
@@ -26,13 +27,42 @@ describe('pos', function () {
         ];
         allItems = fixtures.loadallItems();
         promotions = fixtures.loadPromotions();
+        cartItems = [
+            {
+                item: {
+                    barcode: "ITEM000001",
+                    name: "羽毛球",
+                    unit: "个",
+                    price: 1.00
+                },
+                count: 5
+            },
+            {
+                item: {
+                    barcode: "ITEM000003",
+                    name: "苹果",
+                    unit: "斤",
+                    price: 5.50
+                },
+                count: 2
+            },
+            {
+                item: {
+                    barcode: "ITEM000005",
+                    name: "可口可乐",
+                    unit: "瓶",
+                    price: 3.00
+                },
+                count: 3
+            }
+        ];
     });
 
-    it('should print correct text', function () {
+    it('should print text', function () {
 
         spyOn(console, 'log');
 
-       // main.printReceipt(inputs);
+        // main.printReceipt(inputs);
 
         const expectText = '***<没钱赚商店>收据***' + '\n' +
             '名称：羽毛球，数量：5个，单价：1.00(元)，小计：4.00(元)' + '\n' +
@@ -83,5 +113,51 @@ describe('pos', function () {
             }
         ];
         expect(cartItems).toEqual(expectCartItems);
+    });
+
+    it('should print receiptItems', function () {
+        var receiptItems = main.buildReceiptItems(cartItems, promotions);
+        var expectReceiptItems = [
+            {
+                cartItem: {
+                    item: {
+                        barcode: "ITEM000001",
+                        name: "羽毛球",
+                        unit: "个",
+                        price: 1.00
+                    },
+                    count: 5,
+                },
+                subtotal: 4.00,
+                saved: 1.00
+            },
+            {
+                cartItem: {
+                    item: {
+                        barcode: "ITEM000003",
+                        name: "苹果",
+                        unit: "斤",
+                        price: 5.50
+                    },
+                    count: 2
+                },
+                total:11.00,
+                saved:0.00
+            },
+            {
+                cartItem:{
+                    item: {
+                        barcode: "ITEM000005",
+                        name: "可口可乐",
+                        unit: "瓶",
+                        price: 3.00
+                    },
+                    count: 3
+                },
+                total:6.00,
+                saved:3.00
+            }
+        ];
+        expect(receiptItems).toEqual(expectReceiptItems);
     });
 });
