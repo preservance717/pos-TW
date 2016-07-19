@@ -81,11 +81,11 @@ describe('pos', function () {
                     },
                     count: 2
                 },
-                subtotal:10.45,
-                saved:0.55
+                subtotal: 10.45,
+                saved: 0.55
             },
             {
-                cartItem:{
+                cartItem: {
                     item: {
                         barcode: "ITEM000005",
                         name: "可口可乐",
@@ -94,8 +94,8 @@ describe('pos', function () {
                     },
                     count: 3
                 },
-                subtotal:6.00,
-                saved:3.00
+                subtotal: 6.00,
+                saved: 3.00
             }
         ]
     });
@@ -183,11 +183,11 @@ describe('pos', function () {
                     },
                     count: 2
                 },
-                subtotal:10.45,
-                saved:0.55
+                subtotal: 10.45,
+                saved: 0.55
             },
             {
-                cartItem:{
+                cartItem: {
                     item: {
                         barcode: "ITEM000005",
                         name: "可口可乐",
@@ -196,8 +196,8 @@ describe('pos', function () {
                     },
                     count: 3
                 },
-                subtotal:6.00,
-                saved:3.00
+                subtotal: 6.00,
+                saved: 3.00
             }
         ];
         expect(receiptItems).toEqual(expectReceiptItems);
@@ -206,7 +206,7 @@ describe('pos', function () {
     it('should print receipt', function () {
         var receipt = main.buildReceipt(receiptItems);
         var expectReceipt = {
-            receiptItems:[
+            receiptItems: [
                 {
                     cartItem: {
                         item: {
@@ -230,11 +230,11 @@ describe('pos', function () {
                         },
                         count: 2
                     },
-                    subtotal:10.45,
-                    saved:0.55
+                    subtotal: 10.45,
+                    saved: 0.55
                 },
                 {
-                    cartItem:{
+                    cartItem: {
                         item: {
                             barcode: "ITEM000005",
                             name: "可口可乐",
@@ -243,12 +243,12 @@ describe('pos', function () {
                         },
                         count: 3
                     },
-                    subtotal:6.00,
-                    saved:3.00
+                    subtotal: 6.00,
+                    saved: 3.00
                 }
             ],
-            total:20.45,
-            discount:4.55
+            total: 20.45,
+            discount: 4.55
         };
 
         expect(receipt).toEqual(expectReceipt);

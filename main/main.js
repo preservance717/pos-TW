@@ -1,8 +1,20 @@
 /**
  * Created by gaole on 7/19/16.
  */
-'use strict'
+'use strict';
 
+
+function buildReceipt(receiptItems) {
+    var total = 0;
+    var discount = 0;
+
+    receiptItems.forEach(function (receiptItem) {
+        total += receiptItem.subtotal;
+        discount += receiptItem.saved;
+    });
+
+    return {receiptItems:receiptItems,total:total, discount:discount};
+}
 
 function buildReceiptItems(cartItems, promotions) {
     var receiptItems = [];
@@ -79,5 +91,6 @@ function findItem(allItems, barcode) {
 
 module.exports = {
     buildCartItems: buildCartItems,
-    buildReceiptItems: buildReceiptItems
+    buildReceiptItems: buildReceiptItems,
+    buildReceipt:buildReceipt
 };
