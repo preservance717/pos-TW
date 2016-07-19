@@ -20,7 +20,7 @@ function discount(cartItem, promotionType) {
     if (promotionType === 'BUY_TWO_GET_ONE_FREE') {
         saved = cartItem.item.price * parseInt(cartItem.count / 3);
     } else if (promotionType === 'a 95 persent charge') {
-        saved = cartItem.item.price * 0.05;
+        saved = cartItem.item.price * parseInt(cartItem.count) * 0.05;
     }
 
     var subtotal = cartItem.item.price * parseInt(cartItem.count) - saved;
@@ -30,10 +30,13 @@ function discount(cartItem, promotionType) {
 
 function getPromotionType(barcode, promotions) {
     for (var i = 0; i < promotions.length; i++) {
-        for (var j = 0; i < promotions[j].barcodes.length; j++) {
-            return promotions[i].barcodes[j] === barcode ? promotions[i].type : '';
+        for (var j = 0; j < promotions[i].barcodes.length; j++) {
+            if(promotions[i].barcodes[j] === barcode){
+               return promotions[i].type;
+            }
         }
     }
+    return;
 }
 
 function buildCartItems(tags, allItems) {

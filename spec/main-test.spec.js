@@ -141,7 +141,7 @@ describe('pos', function () {
                     },
                     count: 2
                 },
-                total:10.45,
+                subtotal:10.45,
                 saved:0.55
             },
             {
@@ -154,7 +154,7 @@ describe('pos', function () {
                     },
                     count: 3
                 },
-                total:6.00,
+                subtotal:6.00,
                 saved:3.00
             }
         ];

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.js" afterPath="$PROJECT_DIR$/main/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/main-test.spec.js" afterPath="$PROJECT_DIR$/spec/main-test.spec.js" />
     </list>
@@ -26,13 +24,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="146" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="3" />
+            <state relative-caret-position="332">
+              <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
               <folding>
-                <marker date="1468930731634" expanded="true" signature="1524:2060" placeholder="..." />
+                <marker date="1468933975750" expanded="true" signature="1524:2060" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -41,8 +39,8 @@
       <file leaf-file-name="fixtures.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="56" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
+            <state relative-caret-position="338">
+              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -50,14 +48,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="650">
+              <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,11 +97,11 @@
       <list>
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/spec/main-test.js" />
-        <option value="$PROJECT_DIR$/spec/fixtures.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/spec/main-test.spec.js" />
+        <option value="$PROJECT_DIR$/spec/fixtures.js" />
         <option value="$PROJECT_DIR$/main/main.js" />
+        <option value="$PROJECT_DIR$/spec/main-test.spec.js" />
       </list>
     </option>
   </component>
@@ -282,12 +290,12 @@
       <updated>1468858156946</updated>
       <workItem from="1468858158901" duration="1372000" />
       <workItem from="1468891194070" duration="2581000" />
-      <workItem from="1468899782520" duration="18971000" />
+      <workItem from="1468899782520" duration="20100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22924000" />
+    <option name="totallyTimeSpent" value="24053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="82" width="1301" height="744" extended-state="0" />
@@ -341,7 +349,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1468930731634" expanded="true" signature="1524:2060" placeholder="..." />
+            <marker date="1468933975750" expanded="true" signature="1524:2060" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -393,7 +401,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1468930731634" expanded="true" signature="1524:2060" placeholder="..." />
+            <marker date="1468933975750" expanded="true" signature="1524:2060" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -432,14 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
@@ -456,10 +456,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="56" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
+        <state relative-caret-position="338">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
@@ -468,20 +486,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="146" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="162" selection-end-column="3" />
+        <state relative-caret-position="332">
+          <caret line="135" column="4" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
           <folding>
-            <marker date="1468930731634" expanded="true" signature="1524:2060" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
+            <marker date="1468933975750" expanded="true" signature="1524:2060" placeholder="..." />
           </folding>
         </state>
       </provider>
