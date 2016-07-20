@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/main-test.spec.js" afterPath="$PROJECT_DIR$/spec/main-test.spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.js" afterPath="$PROJECT_DIR$/main/main.js" />
     </list>
     <ignored path="pos-TW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,33 +38,41 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="3100">
               <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
-              <folding>
-                <element signature="e#211#2960#0" expanded="false" />
-                <element signature="e#3005#12612#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="462">
+              <caret line="387" column="3" selection-start-line="387" selection-start-column="3" selection-end-line="387" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="91" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="2" />
+            <state relative-caret-position="2106">
+              <caret line="202" column="13" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
+                <element signature="n#!!block;n#printReceipt#0" expanded="false" />
+                <element signature="n#!!block;n#buildCartItems#0" expanded="false" />
+                <element signature="n#!!block;n#findCartItem#0" expanded="false" />
+                <element signature="n#!!block;n#findItem#0" expanded="false" />
+                <element signature="n#!!block;n#buildReceiptItems#0" expanded="false" />
+                <element signature="n#!!block;n#discount#0" expanded="false" />
+                <element signature="n#!!block;n#getPromotionType#0" expanded="false" />
+                <element signature="n#!!block;n#buildReceipt#0" expanded="false" />
+                <element signature="n#!!block;n#buildReceiptText#0" expanded="false" />
+                <element signature="n#!!block;n#promotionText#0" expanded="false" />
+                <element signature="n#!!block;n#formatMoney#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -90,8 +98,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spec/fixtures.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/main/main.js" />
         <option value="$PROJECT_DIR$/spec/main-test.spec.js" />
+        <option value="$PROJECT_DIR$/main/main.js" />
       </list>
     </option>
   </component>
@@ -281,12 +289,12 @@
       <workItem from="1468858158901" duration="1372000" />
       <workItem from="1468891194070" duration="2581000" />
       <workItem from="1468899782520" duration="24778000" />
-      <workItem from="1468978039835" duration="32281000" />
+      <workItem from="1468978039835" duration="34197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61012000" />
+    <option name="totallyTimeSpent" value="62928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -327,7 +335,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -336,10 +344,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3510">
           <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
-          <folding>
-            <element signature="e#211#2960#0" expanded="false" />
-            <element signature="e#3005#12612#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -357,6 +362,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
+            <element signature="n#!!block;n#printReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildCartItems#0" expanded="false" />
+            <element signature="n#!!block;n#findCartItem#0" expanded="false" />
+            <element signature="n#!!block;n#findItem#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptItems#0" expanded="false" />
+            <element signature="n#!!block;n#discount#0" expanded="false" />
+            <element signature="n#!!block;n#getPromotionType#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptText#0" expanded="false" />
+            <element signature="n#!!block;n#promotionText#0" expanded="false" />
+            <element signature="n#!!block;n#formatMoney#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -372,10 +388,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#211#2960#0" expanded="false" />
-            <element signature="e#3005#12612#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -385,6 +398,17 @@
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
+            <element signature="n#!!block;n#printReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildCartItems#0" expanded="false" />
+            <element signature="n#!!block;n#findCartItem#0" expanded="false" />
+            <element signature="n#!!block;n#findItem#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptItems#0" expanded="false" />
+            <element signature="n#!!block;n#discount#0" expanded="false" />
+            <element signature="n#!!block;n#getPromotionType#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptText#0" expanded="false" />
+            <element signature="n#!!block;n#promotionText#0" expanded="false" />
+            <element signature="n#!!block;n#formatMoney#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -422,10 +446,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#211#2960#0" expanded="false" />
-            <element signature="e#3005#12612#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -435,6 +456,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
+            <element signature="n#!!block;n#printReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildCartItems#0" expanded="false" />
+            <element signature="n#!!block;n#findCartItem#0" expanded="false" />
+            <element signature="n#!!block;n#findItem#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptItems#0" expanded="false" />
+            <element signature="n#!!block;n#discount#0" expanded="false" />
+            <element signature="n#!!block;n#getPromotionType#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptText#0" expanded="false" />
+            <element signature="n#!!block;n#promotionText#0" expanded="false" />
+            <element signature="n#!!block;n#formatMoney#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -476,24 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="91" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1398">
@@ -506,11 +520,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+        <state relative-caret-position="462">
+          <caret line="387" column="3" selection-start-line="387" selection-start-column="3" selection-end-line="387" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3100">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="202" column="13" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
           <folding>
-            <element signature="e#211#2960#0" expanded="false" />
-            <element signature="e#3005#12612#0" expanded="false" />
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="n#!!block;n#printReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildCartItems#0" expanded="false" />
+            <element signature="n#!!block;n#findCartItem#0" expanded="false" />
+            <element signature="n#!!block;n#findItem#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptItems#0" expanded="false" />
+            <element signature="n#!!block;n#discount#0" expanded="false" />
+            <element signature="n#!!block;n#getPromotionType#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceipt#0" expanded="false" />
+            <element signature="n#!!block;n#buildReceiptText#0" expanded="false" />
+            <element signature="n#!!block;n#promotionText#0" expanded="false" />
+            <element signature="n#!!block;n#formatMoney#0" expanded="false" />
           </folding>
         </state>
       </provider>
