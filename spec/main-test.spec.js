@@ -191,7 +191,7 @@ describe('unit test', function () {
         receipt = {
             receiptItems: receiptItems,
             total: 20.45,
-            discount: 4.55
+            totalSaved: 4.55
         }
     });
 
@@ -332,7 +332,7 @@ describe('unit test', function () {
                 }
             ],
             total: 20.45,
-            discount: 4.55
+            totalSaved: 4.55
         };
 
         expect(receipt).toEqual(expectReceipt);

@@ -32,7 +32,7 @@ function buildReceiptText(receipt) {
 
     receiptText += promotionText(receipt) + '\n' + '----------------------' + '\n' +
         '总计：' + formatMoney(receipt.total) + '(元)' + '\n' + '节省：' +
-        formatMoney(receipt.discount) + '(元)' + '\n' +'**********************';
+        formatMoney(receipt.totalSaved) + '(元)' + '\n' +'**********************';
 
     return receiptText;
 }
@@ -59,14 +59,14 @@ function promotionText(receipt) {
 
 function buildReceipt(receiptItems) {
     var total = 0;
-    var discount = 0;
+    var totalSaved = 0;
 
     receiptItems.forEach(function (receiptItem) {
         total += receiptItem.subtotal;
-        discount += receiptItem.saved;
+        totalSaved += receiptItem.saved;
     });
 
-    return {receiptItems: receiptItems, total: total, discount: discount};
+    return {receiptItems: receiptItems, total: total, totalSaved: totalSaved};
 }
 
 function buildReceiptItems(cartItems, promotions) {
@@ -74,12 +74,12 @@ function buildReceiptItems(cartItems, promotions) {
 
     for (var i = 0; i < cartItems.length; i++) {
         var promotionType = getPromotionType(cartItems[i].item.barcode, promotions);
-        receiptItems.push(discountq(cartItems[i], promotionType));
+        receiptItems.push(discount(cartItems[i], promotionType));
     }
     return receiptItems;
 }
 
-function discountq(cartItem, promotionType) {
+function discount(cartItem, promotionType) {
     var saved = 0;
 
     if (promotionType === 'BUY_TWO_GET_ONE_FREE') {
