@@ -54,7 +54,7 @@ function loadPromotions() {
             ]
         },
         {
-            type: 'a 95 persent charge',
+            type: 'A_95_PRESENT_CHARGE',
             barcodes: [
                 'ITEM000000',
                 'ITEM000003'
