@@ -244,7 +244,6 @@ describe('unit test', function () {
         expect(cartItems).toEqual(expectCartItems);
     });
 
-
     it('should print receiptItems', function () {
         var receiptItems = main.buildReceiptItems(cartItems, promotions);
         const expectReceiptItems = [
@@ -295,6 +294,36 @@ describe('unit test', function () {
             }
         ];
         expect(receiptItems).toEqual(expectReceiptItems);
+    });
+
+    it('should print receiptItems when no promotion', function () {
+        var cartItems = [
+            {
+                item: {
+                    barcode: 'ITEM000004',
+                    name: '电池',
+                    unit: '个',
+                    price: 2.00
+                },
+                count: 4
+            }
+        ];
+        var receiptItems = main.buildReceiptItems(cartItems, promotions);
+        var expectReceiptItems = [
+            {
+                cartItem: {
+                    item: {
+                        barcode: 'ITEM000004',
+                        name: '电池',
+                        unit: '个',
+                        price: 2.00
+                    },
+                    count: 4
+                },
+                subtotal:8.00,
+                saved:0.00
+            }
+        ];
     });
 
     it('should print receipt', function () {
