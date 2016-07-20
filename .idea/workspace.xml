@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.js" afterPath="$PROJECT_DIR$/main/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/main-test.spec.js" afterPath="$PROJECT_DIR$/spec/main-test.spec.js" />
     </list>
     <ignored path="pos-TW.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="fixtures.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            <state relative-caret-position="1144">
+              <caret line="49" column="39" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="39" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -46,16 +46,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            <state relative-caret-position="266">
+              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
               <folding>
-                <element signature="e#3206#4572#0" expanded="false" />
-                <element signature="e#5788#7155#0" expanded="false" />
-                <element signature="e#7267#9052#0" expanded="false" />
-                <marker date="1469009464494" expanded="true" signature="620:1121" placeholder="..." />
+                <element signature="e#2676#9790#0" expanded="false" />
+                <element signature="e#3940#5306#0" expanded="false" />
+                <element signature="e#6522#7889#0" expanded="false" />
+                <element signature="e#8001#9786#0" expanded="false" />
+                <marker date="1469019361998" expanded="true" signature="620:1121" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -64,22 +65,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2414">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
-                <element signature="e#2353#2511#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,9 +93,9 @@
         <option value="$PROJECT_DIR$/spec/main-test.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/spec/fixtures.js" />
-        <option value="$PROJECT_DIR$/spec/main-test.spec.js" />
-        <option value="$PROJECT_DIR$/main/main.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/main/main.js" />
+        <option value="$PROJECT_DIR$/spec/main-test.spec.js" />
       </list>
     </option>
   </component>
@@ -295,12 +285,12 @@
       <workItem from="1468858158901" duration="1372000" />
       <workItem from="1468891194070" duration="2581000" />
       <workItem from="1468899782520" duration="24778000" />
-      <workItem from="1468978039835" duration="26314000" />
+      <workItem from="1468978039835" duration="28501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55045000" />
+    <option name="totallyTimeSpent" value="57232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -351,10 +341,11 @@
         <state relative-caret-position="3510">
           <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
           <folding>
-            <element signature="e#3206#4572#0" expanded="false" />
-            <element signature="e#5788#7155#0" expanded="false" />
-            <element signature="e#7267#9052#0" expanded="false" />
-            <marker date="1469009464494" expanded="true" signature="620:1121" placeholder="..." />
+            <element signature="e#2676#9790#0" expanded="false" />
+            <element signature="e#3940#5306#0" expanded="false" />
+            <element signature="e#6522#7889#0" expanded="false" />
+            <element signature="e#8001#9786#0" expanded="false" />
+            <marker date="1469019361998" expanded="true" signature="620:1121" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -373,7 +364,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#2353#2511#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -390,10 +380,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3206#4572#0" expanded="false" />
-            <element signature="e#5788#7155#0" expanded="false" />
-            <element signature="e#7267#9052#0" expanded="false" />
-            <marker date="1469009464494" expanded="true" signature="620:1121" placeholder="..." />
+            <element signature="e#2676#9790#0" expanded="false" />
+            <element signature="e#3940#5306#0" expanded="false" />
+            <element signature="e#6522#7889#0" expanded="false" />
+            <element signature="e#8001#9786#0" expanded="false" />
+            <marker date="1469019361998" expanded="true" signature="620:1121" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -404,7 +395,6 @@
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#2353#2511#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -443,10 +433,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3206#4572#0" expanded="false" />
-            <element signature="e#5788#7155#0" expanded="false" />
-            <element signature="e#7267#9052#0" expanded="false" />
-            <marker date="1469009464494" expanded="true" signature="620:1121" placeholder="..." />
+            <element signature="e#2676#9790#0" expanded="false" />
+            <element signature="e#3940#5306#0" expanded="false" />
+            <element signature="e#6522#7889#0" expanded="false" />
+            <element signature="e#8001#9786#0" expanded="false" />
+            <marker date="1469019361998" expanded="true" signature="620:1121" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -457,7 +448,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#2353#2511#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -491,10 +481,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="52">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
@@ -509,35 +507,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
+    <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding>
-            <element signature="e#3206#4572#0" expanded="false" />
-            <element signature="e#5788#7155#0" expanded="false" />
-            <element signature="e#7267#9052#0" expanded="false" />
-            <marker date="1469009464494" expanded="true" signature="620:1121" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2414">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="1144">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="39" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#2353#2511#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="266">
+          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+          <folding>
+            <element signature="e#2676#9790#0" expanded="false" />
+            <element signature="e#3940#5306#0" expanded="false" />
+            <element signature="e#6522#7889#0" expanded="false" />
+            <element signature="e#8001#9786#0" expanded="false" />
+            <marker date="1469019361998" expanded="true" signature="620:1121" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

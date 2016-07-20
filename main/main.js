@@ -74,12 +74,12 @@ function buildReceiptItems(cartItems, promotions) {
 
     for (var i = 0; i < cartItems.length; i++) {
         var promotionType = getPromotionType(cartItems[i].item.barcode, promotions);
-        receiptItems.push(discount(cartItems[i], promotionType));
+        receiptItems.push(discountq(cartItems[i], promotionType));
     }
     return receiptItems;
 }
 
-function discount(cartItem, promotionType) {
+function discountq(cartItem, promotionType) {
     var saved = 0;
 
     if (promotionType === 'BUY_TWO_GET_ONE_FREE') {

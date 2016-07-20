@@ -65,6 +65,29 @@ describe('pos', function () {
 
         expect(console.log).toHaveBeenCalledWith(expectText);
     });
+
+    it('should print receipt when have BUY_TWO_GET_ONE_FREE', function () {
+        inputs = [
+            'ITEM000000-3',
+            'ITEM000001-6'
+        ];
+        spyOn(console, 'log');
+
+        main.printReceipt(inputs);
+
+        const expectText = '***<没钱赚商店>收据***' + '\n' +
+            '名称：雪碧，数量：3瓶，单价：3.00(元)，小计：9.00(元)' + '\n' +
+            '名称：羽毛球，数量：6个，单价：1.00(元)，小计：4.00(元)' + '\n' +
+            '----------------------' + '\n' +
+            '买二赠一商品' + '\n' +
+            '名称：羽毛球，数量：2个' + '\n' +
+            '----------------------' + '\n' +
+            '总计：13.00(元)' + '\n' +
+            '节省：2.00(元)' + '\n' +
+            '**********************';
+
+        expect(console.log).toHaveBeenCalledWith(expectText);
+    })
 });
 
 describe('unit test', function () {
