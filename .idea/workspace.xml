@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/main-test.spec.js" afterPath="$PROJECT_DIR$/spec/main-test.spec.js" />
-    </list>
+    <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="" />
     <ignored path="pos-TW.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +46,8 @@
       <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="323" column="26" selection-start-line="323" selection-start-column="26" selection-end-line="323" selection-end-column="26" />
+            <state relative-caret-position="384">
+              <caret line="321" column="18" selection-start-line="321" selection-start-column="18" selection-end-line="321" selection-end-column="18" />
               <folding>
                 <element signature="e#3940#5306#0" expanded="false" />
                 <marker date="1469020972810" expanded="true" signature="619:1120" placeholder="..." />
@@ -281,12 +279,12 @@
       <workItem from="1468858158901" duration="1372000" />
       <workItem from="1468891194070" duration="2581000" />
       <workItem from="1468899782520" duration="24778000" />
-      <workItem from="1468978039835" duration="30111000" />
+      <workItem from="1468978039835" duration="30402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58842000" />
+    <option name="totallyTimeSpent" value="59133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -506,8 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="323" column="26" selection-start-line="323" selection-start-column="26" selection-end-line="323" selection-end-column="26" />
+        <state relative-caret-position="384">
+          <caret line="321" column="18" selection-start-line="321" selection-start-column="18" selection-end-line="321" selection-end-column="18" />
           <folding>
             <element signature="e#3940#5306#0" expanded="false" />
             <marker date="1469020972810" expanded="true" signature="619:1120" placeholder="..." />
