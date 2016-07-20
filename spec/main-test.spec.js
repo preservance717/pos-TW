@@ -120,7 +120,7 @@ describe('pos', function () {
 
         const expectText = '***<没钱赚商店>收据***' + '\n' +
             '名称：羽毛球，数量：5个，单价：1.00(元)，小计：4.00(元)' + '\n' +
-            '名称：苹果，数量：2斤，单价：5.50(元)，小计：10.45(元)' + '\n' +
+            '名称：苹果，数量：2斤，单价：5.50(元)，小计：10.45(元)，节省：0.55(元)' + '\n' +
             '名称：可口可乐，数量：3瓶，单价：3.00(元)，小计：6.00(元)' + '\n' +
             '----------------------' + '\n' +
             '买二赠一商品' + '\n' +
@@ -134,8 +134,7 @@ describe('pos', function () {
 
         expect(console.log).toHaveBeenCalledWith(expectText);
     });
-    
-    it ('');
+
     
     it('should print cartItems', function () {
         var cartItems = main.buildCartItems(inputs, allItems);

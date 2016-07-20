@@ -23,14 +23,17 @@ function buildReceiptText(receipt) {
 
     receipt.receiptItems.forEach(function (receiptItem) {
         receiptText += '\n' + '名称：' + receiptItem.cartItem.item.name + '，数量：' + receiptItem.cartItem.count +
-            receiptItem.cartItem.item.unit + '，单价：' + receiptItem.cartItem.item.price.toFixed(2) + '(元)' + '，小计：' +
-            receiptItem.subtotal.toFixed(2) + '(元)';
+            receiptItem.cartItem.item.unit + '，单价：' + formatMoney(receiptItem.cartItem.item.price) + '(元)' + '，小计：' +
+            formatMoney(receiptItem.subtotal) + '(元)';
+        if (receiptItem.type === 'A_95_PRESENT_CHARGE') {
+            receiptText += '，节省：' + formatMoney(receiptItem.saved) + '(元)';
+        }
     });
 
     receiptText += '\n' + '----------------------' + '\n';
     receiptText += promotionText(receipt) + '\n' + '**********************' + '\n' +
         '----------------------' + '\n';
-    receiptText += '总计：' + receipt.total + '(元)' + '\n' + '节省：' + formatMoney(receipt.discount) + '(元)' + '\n' +
+    receiptText += '总计：' + formatMoney(receipt.total) + '(元)' + '\n' + '节省：' + formatMoney(receipt.discount) + '(元)' + '\n' +
         '**********************';
 
     return receiptText;
