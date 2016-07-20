@@ -3,7 +3,6 @@
  */
 'use strict';
 
-
 var fixtures = require('./fixtures');
 var main = require("../main/main.js");
 
@@ -58,7 +57,7 @@ describe('pos', function () {
         const expectText = '***<没钱赚商店>收据***' + '\n' +
             '名称：雪碧，数量：3瓶，单价：3.00(元)，小计：9.00(元)' + '\n' +
             '名称：荔枝，数量：2斤，单价：15.00(元)，小计：28.50(元)，节省：1.50(元)' + '\n' +
-            '----------------------'+ '\n' +
+            '----------------------' + '\n' +
             '总计：37.50(元)' + '\n' +
             '节省：1.50(元)' + '\n' +
             '**********************';
@@ -228,6 +227,23 @@ describe('unit test', function () {
         ];
         expect(cartItems).toEqual(expectCartItems);
     });
+
+    it('when after dash number is digit', function () {
+        var barcode = ['ITEM000003-1.5'];
+        var cartItems = main.buildCartItems(barcode, allItems);
+        const expectCartItems = [{
+            item: {
+                barcode: "ITEM000003",
+                name: "苹果",
+                unit: "斤",
+                price: 5.50
+            },
+            count: 1.5
+        }];
+
+        expect(cartItems).toEqual(expectCartItems);
+    });
+
 
     it('should print receiptItems', function () {
         var receiptItems = main.buildReceiptItems(cartItems, promotions);

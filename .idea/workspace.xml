@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.js" afterPath="$PROJECT_DIR$/main/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/main-test.spec.js" afterPath="$PROJECT_DIR$/spec/main-test.spec.js" />
     </list>
     <ignored path="pos-TW.iws" />
@@ -27,7 +26,7 @@
       <file leaf-file-name="fixtures.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
+            <state relative-caret-position="1040">
               <caret line="49" column="39" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="39" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
@@ -49,12 +48,11 @@
       <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
+            <state relative-caret-position="176">
+              <caret line="230" column="43" selection-start-line="230" selection-start-column="43" selection-end-line="230" selection-end-column="43" />
               <folding>
-                <element signature="e#162#2638#0" expanded="false" />
                 <element signature="e#3940#5306#0" expanded="false" />
-                <marker date="1469019817942" expanded="true" signature="620:1121" placeholder="..." />
+                <marker date="1469020354622" expanded="true" signature="619:1120" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -63,7 +61,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
+            <state relative-caret-position="-748">
               <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
@@ -283,12 +281,12 @@
       <workItem from="1468858158901" duration="1372000" />
       <workItem from="1468891194070" duration="2581000" />
       <workItem from="1468899782520" duration="24778000" />
-      <workItem from="1468978039835" duration="28957000" />
+      <workItem from="1468978039835" duration="29493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57688000" />
+    <option name="totallyTimeSpent" value="58224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -339,9 +337,8 @@
         <state relative-caret-position="3510">
           <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
           <folding>
-            <element signature="e#162#2638#0" expanded="false" />
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469019817942" expanded="true" signature="620:1121" placeholder="..." />
+            <marker date="1469020354622" expanded="true" signature="619:1120" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -376,9 +373,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#162#2638#0" expanded="false" />
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469019817942" expanded="true" signature="620:1121" placeholder="..." />
+            <marker date="1469020354622" expanded="true" signature="619:1120" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -427,9 +423,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#162#2638#0" expanded="false" />
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469019817942" expanded="true" signature="620:1121" placeholder="..." />
+            <marker date="1469020354622" expanded="true" signature="619:1120" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -491,7 +486,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
+        <state relative-caret-position="1040">
           <caret line="49" column="39" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="39" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
@@ -501,7 +496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
+        <state relative-caret-position="-748">
           <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
@@ -511,12 +506,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
+        <state relative-caret-position="176">
+          <caret line="230" column="43" selection-start-line="230" selection-start-column="43" selection-end-line="230" selection-end-column="43" />
           <folding>
-            <element signature="e#162#2638#0" expanded="false" />
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469019817942" expanded="true" signature="620:1121" placeholder="..." />
+            <marker date="1469020354622" expanded="true" signature="619:1120" placeholder="..." />
           </folding>
         </state>
       </provider>
