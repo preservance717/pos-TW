@@ -32,7 +32,7 @@ function buildReceiptText(receipt) {
 
     receiptText += promotionText(receipt) + '\n' + '----------------------' + '\n' +
         '总计：' + formatMoney(receipt.total) + '(元)' + '\n' + '节省：' +
-        formatMoney(receipt.totalSaved) + '(元)' + '\n' +'**********************';
+        formatMoney(receipt.totalSaved) + '(元)' + '\n' + '**********************';
 
     return receiptText;
 }
@@ -48,7 +48,7 @@ function promotionText(receipt) {
 
     for (var i = 0; i < receipt.receiptItems.length; i++) {
         if (receipt.receiptItems[i].type === 'BUY_TWO_GET_ONE_FREE') {
-            promotionType = '\n'+'----------------------' +'\n'+'买二赠一商品';
+            promotionType = '\n' + '----------------------' + '\n' + '买二赠一商品';
             promotionContent += '\n' + '名称：' + receipt.receiptItems[i].cartItem.item.name + '，数量：' +
                 receipt.receiptItems[i].promotionCount + receipt.receiptItems[i].cartItem.item.unit
         }
@@ -89,11 +89,15 @@ function discount(cartItem, promotionType) {
     }
 
     var subtotal = cartItem.item.price * parseInt(cartItem.count) - saved;
-
-    return {
-        cartItem: cartItem, subtotal: subtotal, saved: saved,
-        type: promotionType, promotionCount: parseInt(cartItem.count / 3)
-    };
+    
+    if (promotionType) {
+        return {
+            cartItem: cartItem, subtotal: subtotal, saved: saved,
+            type: promotionType, promotionCount: parseInt(cartItem.count / 3)
+        };
+    } else {
+        return {cartItem: cartItem, subtotal: subtotal, saved: saved}
+    }
 }
 
 function getPromotionType(barcode, promotions) {

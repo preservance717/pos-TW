@@ -320,10 +320,11 @@ describe('unit test', function () {
                     },
                     count: 4
                 },
-                subtotal:8.00,
-                saved:0.00
+                subtotal: 8.00,
+                saved: 0.00
             }
         ];
+        expect(receiptItems).toEqual(expectReceiptItems);
     });
 
     it('should print receipt', function () {

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="" />
+    <list default="true" id="0b25a1fa-4d2f-413a-aabe-56a7de0e7d49" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/main.js" afterPath="$PROJECT_DIR$/main/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/main-test.spec.js" afterPath="$PROJECT_DIR$/spec/main-test.spec.js" />
+    </list>
     <ignored path="pos-TW.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fixtures.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fixtures.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="36" column="9" selection-start-line="31" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="-500">
+              <caret line="31" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -43,14 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main-test.spec.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="321" column="18" selection-start-line="321" selection-start-column="18" selection-end-line="321" selection-end-column="18" />
+            <state relative-caret-position="-1404">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="27" />
               <folding>
                 <element signature="e#3940#5306#0" expanded="false" />
-                <marker date="1469020972810" expanded="true" signature="619:1120" placeholder="..." />
+                <marker date="1469021386750" expanded="true" signature="619:1120" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -59,8 +62,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
-              <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+            <state relative-caret-position="240">
+              <caret line="91" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="2" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -279,12 +282,12 @@
       <workItem from="1468858158901" duration="1372000" />
       <workItem from="1468891194070" duration="2581000" />
       <workItem from="1468899782520" duration="24778000" />
-      <workItem from="1468978039835" duration="30402000" />
+      <workItem from="1468978039835" duration="31407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59133000" />
+    <option name="totallyTimeSpent" value="60138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -336,7 +339,7 @@
           <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
           <folding>
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469020972810" expanded="true" signature="619:1120" placeholder="..." />
+            <marker date="1469021386750" expanded="true" signature="619:1120" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -372,7 +375,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469020972810" expanded="true" signature="619:1120" placeholder="..." />
+            <marker date="1469021386750" expanded="true" signature="619:1120" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -422,7 +425,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469020972810" expanded="true" signature="619:1120" placeholder="..." />
+            <marker date="1469021386750" expanded="true" signature="619:1120" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -474,16 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -492,10 +485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
+    <entry file="file://$PROJECT_DIR$/main/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="9" selection-start-line="31" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="240">
+          <caret line="91" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="2" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
@@ -504,11 +497,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/main-test.spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="321" column="18" selection-start-line="321" selection-start-column="18" selection-end-line="321" selection-end-column="18" />
+        <state relative-caret-position="-1404">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="27" />
           <folding>
             <element signature="e#3940#5306#0" expanded="false" />
-            <marker date="1469020972810" expanded="true" signature="619:1120" placeholder="..." />
+            <marker date="1469021386750" expanded="true" signature="619:1120" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/fixtures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="31" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
