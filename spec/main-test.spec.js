@@ -13,6 +13,7 @@ describe('pos', function () {
     var promotions;
     var cartItems;
     var receiptItems;
+    var receipt;
 
     beforeEach(function () {
         inputs = [
@@ -69,7 +70,8 @@ describe('pos', function () {
                     count: 5,
                 },
                 subtotal: 4.00,
-                saved: 1.00
+                saved: 1.00,
+                type:'BUY_TWO_GET_ONE_FREE'
             },
             {
                 cartItem: {
@@ -82,7 +84,8 @@ describe('pos', function () {
                     count: 2
                 },
                 subtotal: 10.45,
-                saved: 0.55
+                saved: 0.55,
+                type:'a 95 persent charge'
             },
             {
                 cartItem: {
@@ -95,16 +98,22 @@ describe('pos', function () {
                     count: 3
                 },
                 subtotal: 6.00,
-                saved: 3.00
+                saved: 3.00,
+                type:'BUY_TWO_GET_ONE_FREE'
             }
-        ]
+        ];
+        receipt = {
+            receiptItems:receiptItems,
+            subtotal:20.45,
+            discount:4.55
+        }
     });
 
     it('should print text', function () {
 
         spyOn(console, 'log');
 
-        // main.printReceipt(inputs);
+        main.printReceipt(receipt, promotions);
 
         const expectText = '***<没钱赚商店>收据***' + '\n' +
             '名称：羽毛球，数量：5个，单价：1.00(元)，小计：4.00(元)' + '\n' +
@@ -171,7 +180,8 @@ describe('pos', function () {
                     count: 5,
                 },
                 subtotal: 4.00,
-                saved: 1.00
+                saved: 1.00,
+                type:'BUY_TWO_GET_ONE_FREE'
             },
             {
                 cartItem: {
@@ -184,7 +194,8 @@ describe('pos', function () {
                     count: 2
                 },
                 subtotal: 10.45,
-                saved: 0.55
+                saved: 0.55,
+                type:'a 95 persent charge'
             },
             {
                 cartItem: {
@@ -197,7 +208,8 @@ describe('pos', function () {
                     count: 3
                 },
                 subtotal: 6.00,
-                saved: 3.00
+                saved: 3.00,
+                type:'BUY_TWO_GET_ONE_FREE'
             }
         ];
         expect(receiptItems).toEqual(expectReceiptItems);
@@ -218,7 +230,8 @@ describe('pos', function () {
                         count: 5,
                     },
                     subtotal: 4.00,
-                    saved: 1.00
+                    saved: 1.00,
+                    type:'BUY_TWO_GET_ONE_FREE'
                 },
                 {
                     cartItem: {
@@ -231,7 +244,8 @@ describe('pos', function () {
                         count: 2
                     },
                     subtotal: 10.45,
-                    saved: 0.55
+                    saved: 0.55,
+                    type:'a 95 persent charge'
                 },
                 {
                     cartItem: {
@@ -244,7 +258,8 @@ describe('pos', function () {
                         count: 3
                     },
                     subtotal: 6.00,
-                    saved: 3.00
+                    saved: 3.00,
+                    type:'BUY_TWO_GET_ONE_FREE'
                 }
             ],
             total: 20.45,

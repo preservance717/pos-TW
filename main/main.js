@@ -4,6 +4,21 @@
 'use strict';
 
 
+function printReceipt(receipt) {
+    var text = '***<没钱赚商店>收据***';
+
+    receipt.receiptItems.forEach(function (receiptItem) {
+        text += '\n' + '名称：' + receiptItem.cartItem.item.name + '数量：' + receiptItem.cartItem.count +
+                receiptItem.cartItem.item.unit + '单价：' + receiptItem.cartItem.item.price.toFixed(2) +'(元)，'+ '小计：'+
+                receiptItem.subtotal.toFixed(2) + '(元)';
+    });
+
+    text += '\n'+'----------------------' + '\n';
+
+
+    console.log(text);
+}
+
 function buildReceipt(receiptItems) {
     var total = 0;
     var discount = 0;
@@ -37,7 +52,7 @@ function discount(cartItem, promotionType) {
 
     var subtotal = cartItem.item.price * parseInt(cartItem.count) - saved;
 
-    return {cartItem:cartItem, subtotal:subtotal, saved:saved};
+    return {cartItem:cartItem, subtotal:subtotal, saved:saved, type:promotionType};
 }
 
 function getPromotionType(barcode, promotions) {
@@ -92,5 +107,6 @@ function findItem(allItems, barcode) {
 module.exports = {
     buildCartItems: buildCartItems,
     buildReceiptItems: buildReceiptItems,
-    buildReceipt:buildReceipt
+    buildReceipt:buildReceipt,
+    printReceipt:printReceipt
 };
