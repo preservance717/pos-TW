@@ -35,10 +35,32 @@ describe('pos', function () {
             '买二赠一商品' + '\n' +
             '名称：羽毛球，数量：1个' + '\n' +
             '名称：可口可乐，数量：1瓶' + '\n' +
-            '**********************' + '\n' +
             '----------------------' + '\n' +
             '总计：20.45(元)' + '\n' +
             '节省：4.55(元)' + '\n' +
+            '**********************';
+
+        expect(console.log).toHaveBeenCalledWith(expectText);
+    });
+
+    it('should print receipt when have A_95_PRESENT_CHARGE', function () {
+        inputs = [
+            'ITEM000000',
+            'ITEM000000',
+            'ITEM000000',
+            'ITEM000002',
+            'ITEM000002'
+        ];
+        spyOn(console, 'log');
+
+        main.printReceipt(inputs);
+
+        const expectText = '***<没钱赚商店>收据***' + '\n' +
+            '名称：雪碧，数量：3瓶，单价：3.00(元)，小计：9.00(元)' + '\n' +
+            '名称：荔枝，数量：2斤，单价：15.00(元)，小计：28.50(元)，节省：1.50(元)' + '\n' +
+            '----------------------'+ '\n' +
+            '总计：37.50(元)' + '\n' +
+            '节省：1.50(元)' + '\n' +
             '**********************';
 
         expect(console.log).toHaveBeenCalledWith(expectText);
@@ -152,7 +174,7 @@ describe('unit test', function () {
 
     it('should print cartItems', function () {
         var cartItems = main.buildCartItems(inputs, allItems);
-        var expectCartItems = [
+        const expectCartItems = [
             {
                 item: {
                     barcode: "ITEM000001",
@@ -186,7 +208,7 @@ describe('unit test', function () {
 
     it('should print receiptItems', function () {
         var receiptItems = main.buildReceiptItems(cartItems, promotions);
-        var expectReceiptItems = [
+        const expectReceiptItems = [
             {
                 cartItem: {
                     item: {
@@ -238,7 +260,7 @@ describe('unit test', function () {
 
     it('should print receipt', function () {
         var receipt = main.buildReceipt(receiptItems);
-        var expectReceipt = {
+        const expectReceipt = {
             receiptItems: [
                 {
                     cartItem: {

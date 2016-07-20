@@ -56,7 +56,7 @@ function loadPromotions() {
         {
             type: 'A_95_PRESENT_CHARGE',
             barcodes: [
-                'ITEM000000',
+                'ITEM000002',
                 'ITEM000003'
             ]
         }

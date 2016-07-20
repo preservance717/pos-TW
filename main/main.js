@@ -30,16 +30,15 @@ function buildReceiptText(receipt) {
         }
     });
 
-    receiptText += '\n' + '----------------------' + '\n';
-    receiptText += promotionText(receipt) + '\n' + '**********************' + '\n' +
-        '----------------------' + '\n';
-    receiptText += '总计：' + formatMoney(receipt.total) + '(元)' + '\n' + '节省：' + formatMoney(receipt.discount) + '(元)' + '\n' +
-        '**********************';
+    receiptText += promotionText(receipt) + '\n' + '----------------------' + '\n' +
+        '总计：' + formatMoney(receipt.total) + '(元)' + '\n' + '节省：' +
+        formatMoney(receipt.discount) + '(元)' + '\n' +'**********************';
 
     return receiptText;
 }
 
 function formatMoney(money) {
+
     return money.toFixed(2);
 }
 
@@ -49,7 +48,7 @@ function promotionText(receipt) {
 
     for (var i = 0; i < receipt.receiptItems.length; i++) {
         if (receipt.receiptItems[i].type === 'BUY_TWO_GET_ONE_FREE') {
-            promotionType = '买二赠一商品';
+            promotionType = '\n'+'----------------------' +'\n'+'买二赠一商品';
             promotionContent += '\n' + '名称：' + receipt.receiptItems[i].cartItem.item.name + '，数量：' +
                 receipt.receiptItems[i].promotionCount + receipt.receiptItems[i].cartItem.item.unit
         }
