@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/preservance717/pos-TW.svg?branch=master)](https://travis-ci.org/preservance717/pos-TW)
 # pos-TW
 ## 需求描述
 

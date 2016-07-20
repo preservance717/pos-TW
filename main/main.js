@@ -7,14 +7,14 @@ var fixtures = require('../spec/fixtures');
 
 function printReceipt(tags) {
     var allItems = fixtures.loadAllItems();
-    var cartItems = buildCartItems(tags,allItems);
-    
+    var cartItems = buildCartItems(tags, allItems);
+
     var promotions = fixtures.loadPromotions();
     var receiptItems = buildReceiptItems(cartItems, promotions);
-    
+
     var receipt = buildReceipt(receiptItems);
     var receiptText = buildReceiptText(receipt);
-    
+
     console.log(receiptText);
 }
 
@@ -28,12 +28,12 @@ function buildReceiptText(receipt) {
     });
 
     receiptText += '\n' + '----------------------' + '\n';
-    receiptText += promotionText(receipt) +'\n'+'**********************' + '\n' +
-    '----------------------' + '\n' ;
-    receiptText += '总计：' + receipt.total+'(元)'+'\n'+'节省：' + formatMoney(receipt.discount)+'(元)'+'\n'+
-    '**********************';
-    
-    return  receiptText;
+    receiptText += promotionText(receipt) + '\n' + '**********************' + '\n' +
+        '----------------------' + '\n';
+    receiptText += '总计：' + receipt.total + '(元)' + '\n' + '节省：' + formatMoney(receipt.discount) + '(元)' + '\n' +
+        '**********************';
+
+    return receiptText;
 }
 
 function formatMoney(money) {
@@ -51,7 +51,7 @@ function promotionText(receipt) {
                 receipt.receiptItems[i].promotionCount + receipt.receiptItems[i].cartItem.item.unit
         }
     }
-    
+
     return promotionType + promotionContent;
 }
 

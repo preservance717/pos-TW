@@ -27,7 +27,7 @@ describe('pos', function () {
             'ITEM000005',
             'ITEM000005'
         ];
-        allItems = fixtures.loadAllItems()
+        allItems = fixtures.loadAllItems();
         promotions = fixtures.loadPromotions();
         cartItems = [
             {
@@ -67,7 +67,7 @@ describe('pos', function () {
                         unit: "个",
                         price: 1.00
                     },
-                    count: 5,
+                    count: 5
                 },
                 subtotal: 4.00,
                 saved: 1.00,
@@ -134,7 +134,9 @@ describe('pos', function () {
 
         expect(console.log).toHaveBeenCalledWith(expectText);
     });
-
+    
+    it ('');
+    
     it('should print cartItems', function () {
         var cartItems = main.buildCartItems(inputs, allItems);
         var expectCartItems = [
@@ -233,7 +235,7 @@ describe('pos', function () {
                             unit: "个",
                             price: 1.00
                         },
-                        count: 5,
+                        count: 5
                     },
                     subtotal: 4.00,
                     saved: 1.00,
