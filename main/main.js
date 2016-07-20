@@ -3,22 +3,37 @@
  */
 'use strict';
 
+var fixtures = require('../spec/fixtures');
 
-function printReceipt(receipt) {
-    var text = '***<没钱赚商店>收据***';
+function printReceipt(tags) {
+    var allItems = fixtures.loadAllItems();
+    var cartItems = buildCartItems(tags,allItems);
+    
+    var promotions = fixtures.loadPromotions();
+    var receiptItems = buildReceiptItems(cartItems, promotions);
+    
+    var receipt = buildReceipt(receiptItems);
+    var receiptText = buildReceiptText(receipt);
+    
+    console.log(receiptText);
+}
+
+function buildReceiptText(receipt) {
+    var receiptText = '***<没钱赚商店>收据***';
 
     receipt.receiptItems.forEach(function (receiptItem) {
-        text += '\n' + '名称：' + receiptItem.cartItem.item.name + '，数量：' + receiptItem.cartItem.count +
+        receiptText += '\n' + '名称：' + receiptItem.cartItem.item.name + '，数量：' + receiptItem.cartItem.count +
             receiptItem.cartItem.item.unit + '，单价：' + receiptItem.cartItem.item.price.toFixed(2) + '(元)' + '，小计：' +
             receiptItem.subtotal.toFixed(2) + '(元)';
     });
 
-    text += '\n' + '----------------------' + '\n';
-    text += promotionText(receipt) +'\n'+'**********************' + '\n' +
+    receiptText += '\n' + '----------------------' + '\n';
+    receiptText += promotionText(receipt) +'\n'+'**********************' + '\n' +
     '----------------------' + '\n' ;
-    text += '总计：' + receipt.total+'(元)'+'\n'+'节省：' + formatMoney(receipt.discount)+'(元)'+'\n'+
+    receiptText += '总计：' + receipt.total+'(元)'+'\n'+'节省：' + formatMoney(receipt.discount)+'(元)'+'\n'+
     '**********************';
-    console.log(text);
+    
+    return  receiptText;
 }
 
 function formatMoney(money) {
